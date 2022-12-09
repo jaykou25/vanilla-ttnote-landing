@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TT Note</title>
+  </head>
+  <body>
+    <div class="mynav">
+      <img id="logo" src="/logo.png" />
+      <div class="loginbtn" data-bs-toggle="modal" data-bs-target="#loginModal">
+        微信登录
+      </div>
+    </div>
+    <div
+      class="main d-flex flex-column justify-content-between align-items-center"
+    >
+      <div
+        class="flex-fill d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="fs-3 mb-5">🍅 TT Note</div>
+        <div class="bg-white shadow-sm p-4 rounded">
+          <h2 class="fs-3 mb-0">UNDER DEVELOPMENT</h2>
+        </div>
+      </div>
+
+      <div class="pb-1">
+        <a
+          target="_blank"
+          href="https://beian.miit.gov.cn/"
+          class="text-body beian"
+          >苏ICP备19055204号-1</a
+        >
+      </div>
+    </div>
+
+    <!-- 微信登录弹框 -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-6" id="exampleModalLabel">微信登录</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img class="code" src="/betacode.jpg" />
+            <div class="codetext">请使用微信扫描二维码进行授权登录</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

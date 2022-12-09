@@ -1,0 +1,64 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.mynav {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  align-items: center;
+  padding: 0 60px;
+  background-color: #d43030;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  inset: 0;
+}
+
+#logo {
+  height: 18px;
+}
+
+.loginbtn {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.code {
+  width: 220px;
+}
+
+.codetext {
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 48px;
+  background-color: #f3f4f6;
+}
+
+.beian {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* 覆盖bootstrap样式 */
+.modal-header {
+  border-bottom: none;
+}
