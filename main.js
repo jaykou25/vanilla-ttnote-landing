@@ -1,13 +1,4 @@
-let Interval;
-
-document.querySelector("#loginModal").addEventListener("shown.bs.modal", () => {
-  Interval = setInterval(() => {
-    console.log("sending");
-  }, 1000);
-});
-
-document
-  .querySelector("#loginModal")
-  .addEventListener("hidden.bs.modal", () => {
-    clearInterval(Interval);
-  });
+import { createApp } from "vue";
+import ModalApp from "./src/modalApp/index.vue";
+const modalApp = createApp(ModalApp);
+modalApp.mount("#modalAppRoot");

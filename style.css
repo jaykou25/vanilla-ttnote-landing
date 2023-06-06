@@ -37,8 +37,27 @@
   cursor: pointer;
 }
 
+.codeWrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.codemask {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .code {
-  width: 220px;
+  width: 200px;
 }
 
 .codetext {
@@ -56,6 +75,22 @@
 .beian {
   font-size: 14px;
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #576b95;
+}
+
+a:hover {
+  color: #576b95;
+}
+
+.icon_msg.phone {
+  width: 144px;
+  height: 144px;
+  background: url(https://res.wx.qq.com/mmbizwxampnodelogicsvr_node/dist/images/base_z_@all_2da468.png)
+    0px -1186px no-repeat;
 }
 
 /* 覆盖bootstrap样式 */

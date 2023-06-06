@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://res.wx.qq.com/open/libs/weui-icon/1.0.0/weui-icon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://res.wx.qq.com/t/wx_fed/weui-source/res/2.5.14/weui.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TT Note</title>
@@ -11,9 +19,9 @@
   <body>
     <div class="mynav">
       <img id="logo" src="/logo.png" />
-      <div class="loginbtn" data-bs-toggle="modal" data-bs-target="#loginModal">
+      <!-- <div class="loginbtn" data-bs-toggle="modal" data-bs-target="#loginModal">
         微信登录
-      </div>
+      </div> -->
     </div>
     <div
       class="main d-flex flex-column justify-content-between align-items-center"
@@ -32,31 +40,14 @@
           target="_blank"
           href="https://beian.miit.gov.cn/"
           class="text-body beian"
-          >苏ICP备19055204号-1</a
+          >备案号: 苏ICP备 19055204号-1</a
         >
       </div>
     </div>
 
     <!-- 微信登录弹框 -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fs-6" id="exampleModalLabel">微信登录</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body text-center">
-            <img class="code" src="/betacode.jpg" />
-            <div class="codetext">请使用微信扫描二维码进行授权登录</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="modalAppRoot" />
+
     <script src="/bootstrap.bundle.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
